@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="/static/css/auth.css">
+    <script defer src="/static/js/auth.js"></script>
+</head>
+<body>
+    <div id="toast" class="toast"></div>
+    <div class="main-container">
+        <div class="content">
+            <h2>Авторизация</h2>
+            
+            <form id="authForm">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" required><br>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" required><br>
+
+                <button type="submit">Авторизация</button>
+            </form>
+            <a href="/" class="back-button">← На главную</a>
+        </div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/post_form.css">
+    <script src="/static/js/post_form.js" defer></script>
+    <title>Создание статьи</title>
+</head>
+<body>
+    <div id="toast" class="toast"></div>
+    <div class="form-container">
+        <h1>Создание статьи</h1>
+        <form id="postForm">
+            <textarea id="content" name="content" placeholder="Markdown текст, должен начинаться с заголовка #,
+## чтобы добавить описание" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <a href="/" class="back-button">← На главную</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/article.css">
+    <title>Статья</title>
+
+</head>
+<body>
+    <div class="main-container">
+        <h1>{{ .Title | safeHTML }}</h1>
+        <div class="content">{{ .Content | safeHTML }}</div>
+        <div class="meta">{{ .Author }} | {{ .Date.Format "02.01.2006" }}</div>
+        <button onclick="history.back()" class="button">Назад</button>
+    </div>
+</body>
+</html>

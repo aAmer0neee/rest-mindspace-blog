@@ -1,0 +1,82 @@
+body {
+    background-color: rgba(161, 214, 254, 0.412);
+    color: rgb(67, 67, 67);
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 800px; 
+    height: 600px;
+    margin: 10px auto;
+    padding: 0px 20px 20px;
+    background-color: rgba(184, 184, 184, 0.35);
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.content {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 400px;
+    padding-right: 10px;
+}
+
+
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 4px;
+}
+
+.meta {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #848878;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #91b793;
+}
+
+pre {
+    white-space: pre-wrap;  /* Переносить длинные строки */
+    word-wrap: break-word;  /* Разбивать длинные слова */
+    overflow-x: auto;       /* Добавлять горизонтальную прокрутку */
+    max-width: 100%;        /* Ограничивать ширину */
+    margin: 10px 0;         /* Отступы для улучшения внешнего вида */
+}
+
+pre code {
+    display: block;         /* Делать код блочным элементом */
+    padding: 10px;          /* Добавить отступы */
+    background-color: #646cb446; /* Фоновый цвет для выделения */
+    border-radius: 5px;     /* Радиус для углов */
+    color: #333;            /* Цвет текста */
+    font-size: 14px;        /* Размер шрифта */
+    overflow-x: auto;       /* Горизонтальная прокрутка */
+}

@@ -1,0 +1,144 @@
+body {
+    background-color: rgba(161, 214, 254, 0.412);
+    color: rgb(67, 67, 67);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #b8b8b835;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#postForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #4d90fe;
+    box-shadow: 0 0 8px rgba(77, 144, 254, 0.3);
+}
+
+button {
+    background-color: #848878;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    align-self: center; 
+}
+
+button:hover {
+    background-color: #91b793;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toast.success {
+    background-color: #28a745;
+}
+
+.toast.error {
+    background-color: #dc3545;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4d90fe;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(161, 214, 254, 0.3);
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.back-button:hover {
+    color: #3579e6;
+    background-color: rgba(161, 214, 254, 0.5);
+}

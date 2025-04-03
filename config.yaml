@@ -1,0 +1,14 @@
+server:
+  host: localhost
+  port: :8888
+  env: local
+repository:
+  user: postgres
+  password: postgres
+  name: mydb
+  port: 5432
+  host: postgres #localhost
+  migrate: true
+  sslmode: disable
+auth:
+  jwt_secret: supersecretkey

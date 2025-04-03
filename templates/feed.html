@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/feed.css">
+    <title>Блог</title>
+</head>
+<body>
+    <div class="main-container">
+        <img src="/static/images/amazing_logo.png?cache_buster={{ .Time }}" alt="ooOps" class="logo" />
+        
+        <div class="content">
+            <div id="feed-container"></div>
+            <div id="pagination">
+                <button id="prev-btn" onclick="changePage(-1)">Назад</button>
+                <span id="page-info"></span>
+                <button id="next-btn" onclick="changePage(1)">Вперед</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="/admin" class="button admin">Панель администратора</a>
+
+    <footer class="footer">
+        <p>2025, Личный блог s21 {Dunnjose}</p>
+    </footer>
+
+    <script src="/static/js/feed.js"></script>
+</body>
+</html>
